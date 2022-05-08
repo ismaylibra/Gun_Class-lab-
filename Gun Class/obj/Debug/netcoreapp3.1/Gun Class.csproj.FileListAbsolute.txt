@@ -1,0 +1,14 @@
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.exe
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.deps.json
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.runtimeconfig.json
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.dll
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\bin\Debug\netcoreapp3.1\Gun Class.pdb
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.dll
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.pdb
+C:\Users\ASUS\Desktop\C# tasks\Gun Class\Gun Class\obj\Debug\netcoreapp3.1\Gun Class.genruntimeconfig.cache

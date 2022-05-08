@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun Class", "Gun Class\Gun Class.csproj", "{A62943DE-3A5A-4CCE-BB91-B072ED3C0C81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62943DE-3A5A-4CCE-BB91-B072ED3C0C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62943DE-3A5A-4CCE-BB91-B072ED3C0C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62943DE-3A5A-4CCE-BB91-B072ED3C0C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62943DE-3A5A-4CCE-BB91-B072ED3C0C81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B341C66D-4486-4B20-A2F4-8AC3F1BD510F}
+	EndGlobalSection
+EndGlobal
