@@ -4,27 +4,39 @@ namespace Gun_Class
 {
     class Gun
     {
-        public string Type;
-        public byte TotalBulletSize;
-        public static byte MagazineSize;
-        public byte BulletLeft;
-        byte count = 0;
+      static string _type;
+      public static byte TotalBulletSize;
+      public static byte MagazineSize;
+       public byte BulletLeft;
+       public byte count = 0;
+        public static string Type
+        {
+            get => _type;
+            set
+            {
+                while (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+                {
+                    Console.WriteLine("Please, enter the type of the gun");
+                    value = Console.ReadLine();
+                    _type = value;
+                }
+            }
+        }
+       
+
         public Gun()
         {
 
         }
-        public Gun(string type, byte totalsize)
-        {
-            Type = type;
-            TotalBulletSize = totalsize;
-        }
+       
         public void Shoot()
         {
             BulletLeft = MagazineSize;
             BulletLeft -= count;
-            if (BulletLeft == 0)
+           
+            if (BulletLeft==0)
             {
-                Console.WriteLine("your magazine is empty, you must reload");
+                Console.WriteLine($"You don't have bullet, that's why you can't shoot");
                 return;
             }
             else
@@ -32,6 +44,7 @@ namespace Gun_Class
                 Console.WriteLine($"You have {--BulletLeft} bullet");
                 count++;
             }
+            
         }
         public void Reload()
         {
@@ -44,33 +57,32 @@ namespace Gun_Class
             else
             {
                 TotalBulletSize -= count;
-                BulletLeft += count;
-                
+                BulletLeft = MagazineSize;
                 count = 0;
-
                 Console.WriteLine($"You  must reload. You have {TotalBulletSize} bullet");
             }
         }
         public void BulletLeftMethod()
         {
-            MagazineSize = BulletLeft;
+           
             Console.WriteLine($"You have {BulletLeft} bullet");
         }
-        public void GunInformation()
-        {
-            Console.WriteLine($"Gun Name: {Type} \nTotal Size: {TotalBulletSize} \nGun's Magazine Size: {MagazineSize} \nBullet Left {BulletLeft}");
-        }
+        
         public void FullShoot()
         {
             if (BulletLeft != 0)
             {
-                TotalBulletSize -= BulletLeft;
-                BulletLeft = MagazineSize;
+                count = MagazineSize;
                 BulletLeft = 0;
 
                 Console.WriteLine($"You have {BulletLeft} bullet");
 
             }
+        }
+        public void GunInformation()
+        {
+            
+            Console.WriteLine($"Gun Name: {Type} \nTotal Size: {TotalBulletSize} \nGun's Magazine Size: {MagazineSize} \nBullet Left {BulletLeft}");
         }
     }
 }

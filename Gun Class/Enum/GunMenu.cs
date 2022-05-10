@@ -10,6 +10,7 @@ namespace Gun_Class
         BulletLeft,
         GunInformation,
         Clear,
+        Return,
         Exit
     }
 }

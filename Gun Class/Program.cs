@@ -8,16 +8,17 @@ namespace Gun_Class
         { NewPlace2:
             Gun gun = new Gun();
             Console.WriteLine("Enter the type of the gun");
-            gun.Type = Console.ReadLine();
+            Gun.Type = Console.ReadLine();
             Console.WriteLine("Enter the your total bullet size");
-            gun.TotalBulletSize = Convert.ToByte(Console.ReadLine());
+            Gun.TotalBulletSize = Convert.ToByte(Console.ReadLine());
             Console.WriteLine("Enter the magazine size of the gun");
-            //gun.MagazineSize = Convert.ToByte(Console.ReadLine());
             Gun.MagazineSize = Convert.ToByte(Console.ReadLine());
+            gun.BulletLeft = Gun.MagazineSize;
+           
         NewPlace:
             Console.WriteLine("Please, choose one of them");
-            Console.WriteLine($"1.Shoot \n2.Full Shoot \n3.Reload\n4.Bullet Left \n5.Gun Information \n6.Clear the page \n7.Return to program");
-            Console.WriteLine("************************************************************************************************************************");
+            Console.WriteLine($"\n1. Shoot \n2. Full Shoot \n3. Reload\n4. Bullet Left \n5. Gun Information \n6. Clear the page \n7. Return to program \n8. EXIT");
+            Console.WriteLine("\n*****************");
             byte selection = Convert.ToByte(Console.ReadLine());
 
             switch (selection)
@@ -38,9 +39,12 @@ namespace Gun_Class
                     gun.GunInformation();
                     goto NewPlace;
                 case (byte)GunMenu.Clear:
+                    Console.Clear();
                     goto NewPlace;
+                case (byte)GunMenu.Return:
+                     goto NewPlace2;
                 case (byte)GunMenu.Exit:
-                    goto NewPlace2;   
+                    break;
             }
         }
     }
