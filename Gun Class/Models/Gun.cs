@@ -57,7 +57,14 @@ namespace Gun_Class
             else
             {
                 TotalBulletSize -= count;
-                BulletLeft = MagazineSize;
+                if (TotalBulletSize>=MagazineSize)
+                {
+                    BulletLeft = MagazineSize;
+                }
+                else
+                {
+                    BulletLeft = TotalBulletSize;
+                }
                 count = 0;
                 Console.WriteLine($"You  must reload. You have {TotalBulletSize} bullet");
             }
